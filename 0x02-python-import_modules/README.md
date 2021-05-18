@@ -9,7 +9,7 @@ This project it's about:
 - How to prevent code in your script from being executed when imported
 - How to use command line arguments with your Python programs
 
-## Tasks':'
+## Tasks:
 
 - **0-add.py**
   A program that imports the function def add(a, b): from the file add-0.py and
