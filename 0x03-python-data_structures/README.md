@@ -49,9 +49,13 @@ This project it's about:
   Write a function that replaces an element of a list at a specific position (like in C).
 
   Prototype: def replace_in_list(my_list, idx, element):
+
   If idx is negative, the function should not modify anything, and returns the original list
+
   If idx is out of range (> of number of element in my_list), the function should not modify anything, and returns the original list
+
   You are not allowed to import any module
+
   You are not allowed to use try/except
 
 - **3-print_reversed_list_integer.py**
