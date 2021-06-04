@@ -95,15 +95,15 @@ class Square:
 
         if self.size == 0:
             print()
+        else:
+            if self.position[1] > 0:
+                print()
 
-        if self.position[1] > 0:
-            print('' * self.position[1])
+            for row in range(self.size):
+                print(' ' * self.position[0], end='')
 
-        for row in range(self.size):
-            print(' ' * self.position[0], end='')
-
-            for column in range(self.size):
-                if column == self.size - 1:
-                    print('#')
-                else:
-                    print('#', end='')
+                for column in range(self.size):
+                    if column == self.size - 1:
+                        print('#')
+                    else:
+                        print('#', end='')
