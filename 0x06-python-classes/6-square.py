@@ -97,7 +97,7 @@ class Square:
             print()
         else:
             if self.position[1] > 0:
-                print()
+                print('\n' * self.position[1])
 
             for row in range(self.size):
                 print(' ' * self.position[0], end='')
