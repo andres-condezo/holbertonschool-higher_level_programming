@@ -3,8 +3,9 @@
 
 
 class Square:
-    '''Square: A Square builder class that define a square by:
-        property size    
+    '''
+    Square: A Square builder class that define a square by:
+        property size
         property size setter
         Instantiation with optional size
         Public instance method: def area
@@ -60,8 +61,10 @@ class Square:
 
     def my_print(self):
         '''my_print: Prints in stdout the square with the character #'''
+
         if self.size == 0:
             print()
+
         for row in range(self.size):
             for column in range(self.size):
                 if column == self.size - 1:
