@@ -1,16 +1,17 @@
 #!/usr/bin/python3
-'''a funtion module'''
+'''A module defining the funtion add_integer'''
 
 
 def add_integer(a, b=98):
     '''
-    add_integer: funtion add two integers or floats
+    add_integer: funtion to add two integers or floats
 
-    Arg:
+    Args:
         a (int, float): First parameter
         b (int, float): Second parameter
 
-    return a + b
+    Returns:
+        a + b
 
     '''
 
