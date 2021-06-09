@@ -10,8 +10,13 @@ def add_integer(a, b=98):
         a (int, float): First parameter
         b (int, float): Second parameter
 
+    Raises:
+        TypeError: if a it's not an integer or a float
+        TypeError: if b it's not an integer or a float
+
     Returns:
         a + b
+
 
     '''
 
