@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """my_calculator module"""
 
+from sys import argv
+from calculator_1 import add, sub, mul, div
+
 
 def main():
     """Main function"""
@@ -24,6 +27,4 @@ def main():
 
 
 if __name__ == "__main__":
-    from calculator_1 import add, sub, mul, div
-    from sys import argv
     main()
