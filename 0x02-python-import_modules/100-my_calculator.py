@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""My_calculator module"""
+"""my_calculator module"""
 
 
 def main():
