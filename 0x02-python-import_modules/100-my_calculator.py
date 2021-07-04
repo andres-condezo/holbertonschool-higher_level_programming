@@ -5,7 +5,8 @@ from sys import argv
 from calculator_1 import add, sub, mul, div
 
 
-def main():
+if __name__ == "__main__":
+
     """Main function"""
     dic_op = {"+": add, "-": sub, "*": mul, "/": div}
 
@@ -24,7 +25,3 @@ def main():
 
     result = dic_op[operator](a, b)
     print("{} {} {} = {}".format(a, operator, b, result))
-
-
-if __name__ == "__main__":
-    main()
