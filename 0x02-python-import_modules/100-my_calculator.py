@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-"""my_calculator module"""
 
 from sys import argv
 from calculator_1 import add, sub, mul, div
@@ -7,7 +6,6 @@ from calculator_1 import add, sub, mul, div
 
 if __name__ == "__main__":
 
-    """Main function"""
     dic_op = {"+": add, "-": sub, "*": mul, "/": div}
 
     if len(argv) < 4:
