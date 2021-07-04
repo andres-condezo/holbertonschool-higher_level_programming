@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-
-from sys import argv
-from calculator_1 import add, sub, mul, div
+"""my_calculator module"""
 
 
-if __name__ == "__main__":
-
+def main():
+    """Main function"""
     dic_op = {"+": add, "-": sub, "*": mul, "/": div}
 
     if len(argv) < 4:
@@ -23,3 +21,9 @@ if __name__ == "__main__":
 
     result = dic_op[operator](a, b)
     print("{} {} {} = {}".format(a, operator, b, result))
+
+
+if __name__ == "__main__":
+    from sys import argv
+    from calculator_1 import add, sub, mul, div
+    main()
