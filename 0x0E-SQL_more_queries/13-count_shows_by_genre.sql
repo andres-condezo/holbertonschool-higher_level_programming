@@ -4,4 +4,4 @@ FROM tv_show_genres
 ORDER BY number_of_shows DESC;
 INNER JOIN tv_genres
 ON tv_show_genres.gender_id = tv_genres.id
-GROUP BY tv_show_genres.gender.id
+GROUP BY tv_show_genres.genrer.id
