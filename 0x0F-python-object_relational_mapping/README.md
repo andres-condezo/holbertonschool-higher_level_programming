@@ -18,5 +18,3 @@ This project it's about:
  - **0**
  - **0**
  - **0**
- - **0**
-
