@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-"""a script that lists all states from the database hbtn_0e_0_usa"""
+"""a module for a script that list all states"""
 
 
 def main():
+    """a script that lists all states from the database hbtn_0e_0_usa"""
+
     USER = argv[1]
     PASS = argv[2]
     DATABASE = argv[3]
