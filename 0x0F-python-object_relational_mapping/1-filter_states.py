@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""a module for a script that list all states starting with N"""
+"""A module for a script that list all states starting with N"""
 
 
 def main():
-    """lists all states starting with N from database hbtn_0e_0_usa"""
+    """Lists all states starting with N from database hbtn_0e_0_usa"""
 
     USER = argv[1]
     PASS = argv[2]
