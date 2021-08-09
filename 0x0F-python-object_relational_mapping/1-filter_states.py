@@ -16,7 +16,7 @@ def main():
                          database=DATABASE)
     cursor = db.cursor()
     cursor.execute(
-        "SELECT * FROM states WHERE name LIKE 'N%' COLLATE utf8mb4_bin"
+        "SELECT * FROM states WHERE name LIKE BINARY 'N%'"
     )
     query = cursor.fetchall()
 
