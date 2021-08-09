@@ -16,7 +16,8 @@ def main():
                          database=DATABASE)
     cursor = db.cursor()
     cursor.execute(
-        "SELECT * FROM states WHERE SUBSTRING(name,1,1) = 'N' ORDER BY id")
+        "SELECT * FROM states WHERE name LIKE 'N%' COLLATE utf8mb4_bin"
+    )
     query = cursor.fetchall()
 
     for state in query:
