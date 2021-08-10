@@ -16,7 +16,7 @@ def query():
                          passwd=PASS,
                          database=DATABASE)
     cursor = db.cursor()
-    sql = "SELECT *\
+    sql = "SELECT id, name\
             FROM states\
             WHERE BINARY name='{}'\
             ORDER BY id".format(STATE)
