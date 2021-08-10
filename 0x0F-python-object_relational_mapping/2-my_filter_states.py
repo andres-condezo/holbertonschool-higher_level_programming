@@ -18,9 +18,9 @@ def query():
     cursor = db.cursor()
     sql = "SELECT *\
             FROM states\
-            WHERE name='{}'\
-            ORDER BY id"
-    cursor.execute(sql.format(STATE))
+            WHERE BINARY name='{}'\
+            ORDER BY id".format(STATE)
+    cursor.execute(sql)
     query = cursor.fetchall()
 
     my_list = []
