@@ -2,7 +2,7 @@
 """A module for a script that list all states starting with N"""
 
 
-def main():
+def query():
     """Lists all states starting with N from database hbtn_0e_0_usa"""
 
     USER = argv[1]
@@ -16,16 +16,28 @@ def main():
                          passwd=PASS,
                          database=DATABASE)
     cursor = db.cursor()
-    cursor.execute(
-        "SELECT * FROM states WHERE name='{}' ORDER BY id"
-        .format(STATE))
+    sql = "SELECT *\
+            FROM states\
+            WHERE name='{}'\
+            ORDER BY id"
+    cursor.execute(sql.format(STATE))
     query = cursor.fetchall()
 
+    my_list = []
     for state in query:
-        print(state)
+        my_list.append(state)
 
     cursor.close()
     db.close()
+
+    return my_list
+
+
+def main():
+    """Print all states starting with N"""
+    my_list = query()
+    for state in my_list:
+        print(state)
 
 
 if __name__ == "__main__":
