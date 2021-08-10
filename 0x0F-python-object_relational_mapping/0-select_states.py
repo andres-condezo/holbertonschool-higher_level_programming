@@ -2,7 +2,7 @@
 """a module for a script that list all states"""
 
 
-def main():
+def query():
     """a script that lists all states from the database hbtn_0e_0_usa"""
 
     USER = argv[1]
@@ -15,14 +15,24 @@ def main():
                          passwd=PASS,
                          database=DATABASE)
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states ORDER BY id")
+    cursor.execute("SELECT id, name FROM states ORDER BY id")
     query = cursor.fetchall()
 
+    my_list = []
     for state in query:
-        print(state)
+        my_list.append(state)
 
     cursor.close()
     db.close()
+
+    return my_list
+
+
+def main():
+    my_list = query()
+    if my_list is not None:
+        for state in my_list:
+            print(state)
 
 
 if __name__ == "__main__":
