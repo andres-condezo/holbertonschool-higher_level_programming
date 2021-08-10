@@ -15,7 +15,10 @@ def query():
                          passwd=PASS,
                          database=DATABASE)
     cursor = db.cursor()
-    cursor.execute("SELECT id, name FROM states ORDER BY id")
+    sql = "SELECT id, name\
+            FROM states\
+            ORDER BY id"
+    cursor.execute(sql)
     query = cursor.fetchall()
 
     my_list = []
@@ -29,6 +32,7 @@ def query():
 
 
 def main():
+    """Print all states from the database hbtn_0e_0_usa"""
     my_list = query()
     if my_list is not None:
         for state in my_list:
