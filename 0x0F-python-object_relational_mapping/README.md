@@ -1,6 +1,6 @@
 # 0x0F-python-object_relational_mapping
 
-This project it's about:
+This project it's about :
 
 - Why Python programming is awesome
 - How to connect to a MySQL database from a Python script
