@@ -1,5 +1,5 @@
-const red_header = $('DIV#red_header');
+const redHeader = $('DIV#red_header');
 const header = $('header');
-$(red_header).click(function () {
+$(redHeader).click(function () {
   header.addClass('red');
 });
