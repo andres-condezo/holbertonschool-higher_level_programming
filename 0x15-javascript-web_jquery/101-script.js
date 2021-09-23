@@ -10,4 +10,10 @@ window.addEventListener('DOMContentLoaded', () => {
   $(clearItem).click(function () {
     myList2.text('');
   });
+
+  const removeItem = $('DIV#remove_item');
+  const myList3 = $('.my_list');
+  $(removeItem).click(function () {
+    myList3.children().last().remove();
+  });
 });
